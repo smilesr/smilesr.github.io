@@ -1,0 +1,88 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+  
+body {
+  background-color: #6a6464;
+ /*background-color:#336600;
+ 
+    background-image: url(images/05-white-brick.png);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center; 
+    width: 630px;!
+    height: 246px;*/
+}
+}
+.image {
+
+}
+
+
+}
+.header {
+/*  margin: 0;
+  padding: 0;*/
+ background-color: #0066FF;
+}
+.header h2 {
+   font-family: 'Alegreya SC', serif;
+   font-size: 50px;
+   color: #5f5e5f;
+   font-style: italic;
+   margin: 0 auto 0 auto;
+}
+.header img {
+  margin: 0 auto 0 auto;
+  display: block;
+}
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+.nav li {
+  display: inline;
+  padding-right: 45px;
+
+}
+.nav a {
+  color: #FFFF66;
+}
+
+.content {
+  background-color: #33CCFF;
+
+}
+#contentBox {
+  margin: 0 auto 0 auto;
+  width: 100%;
+
+}
+#column1 {
+  float:left;
+  margin-left: 50px;
+  width:25%;
+  color: #444444;
+}
+#column1 p {
+  padding: 5px 30px 20px 10px;
+}
+#column1 h4 {
+  padding-left: 10px;
+}
+#column1 ul {
+  margin-left: 20px;
+}
+#column2 {
+  float:left;
+  margin-left: 30px;
+  width: 25%;
+}
+#column3 {
+  float:left;
+  margin-left: 30px;
+  width:25%;
+}
