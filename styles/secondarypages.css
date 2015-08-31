@@ -5,30 +5,40 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 }
 
 .contact {
-  background-color: #FFFFFF;
+  background-color: #bbc2c1;
   text-align: center;
+  color: #f4f0ea;
+  font-family: 'Finger Paint', cursive;
+}
+.contact h2 {
+  color: #669900;
 }
 
 .contact li {
   padding-top: 30px;
 }
 .contact .content {
-  margin-bottom: 350px;
+  margin-bottom: 140px;
   list-style-type: none;
 }
 .contact #horiz li {
   display: inline;
+  padding: 10px;
 }
-
+.contact #horiz a {
+  color: #669900;
+}
 .about {
   background-color: #bbc2c1;
+
 }
 .about .header {
   text-align: center;
   margin-bottom: 25px;
+  font-family: 'Finger Paint', cursive;
 }
 .about .header h2 {
-  color: #FFFFFF;
+  color: #f4f0ea;
 }
 .about .header li {
   display: inline;
@@ -48,8 +58,10 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 }
 .about .content h3 {
   width: 60%;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-bottom: 25px;
+  font-family:'Special Elite', cursive;
+  color: #f4f0ea;
 }
 .about .content h4 {
   /*color: #FFFF00;*/
@@ -67,22 +79,56 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 }
 
 .about .content .boundary {
-    border: 1px solid gray;
+  border: 1px solid gray;
 }
 .techskills {
-  background-color: #FFFFFF;
+  background-color: #bbc2c1;
+  font-family: 'Finger Paint', cursive;
+
+}
+.techskills h1 {
   text-align: center;
+  margin-bottom: 25px;
+  color: #f4f0ea;
 }
-.techskills .spacing {
-  margin-top: 15px;
+.techskills h3 {
+  color: #669900;
+  margin-bottom: 15px;
 }
-.techskills .container {
-    /*border: 1px solid black;*/
+.techskills .across{
+  float: left;
+  margin-right: 35px;
+  margin-left: 25px;
+  margin-bottom: 275px;
 }
+
+.techskills .across ul {
+  margin-left: 15px;
+}
+.techskills .across li {
+  color: #f4f0ea;
+  font-family:'Special Elite', cursive;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+/*.techskills h2 {
+  display: inline;
+}*/
+/*.techskills .spacing {
+  /*margin-top: 15px;}*/
+
+
 .techskills #horiz {
+  float: none;
   margin-top:30px;
+  text-align: center;
 }
 .techskills #horiz li {
   display: inline;
   padding-right: 15px;
+
+}
+.techskills #horiz a {
+    color: #669900;
+    font-family: 'Finger Paint', cursive;
 }
