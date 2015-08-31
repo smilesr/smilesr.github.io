@@ -1,3 +1,9 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 .contact {
   background-color: #FFFF00;
   text-align: center;
@@ -6,10 +12,50 @@
 .contact li {
   padding-top: 30px;
 }
-
-.techskills {
-  
+.contact .content {
+  margin-bottom: 450px;
 }
-.techskills ul {
-  border: 1px solid black;
+.contact #horiz li {
+  display: inline;
+}
+
+.about {
+  background-color: #FFFFFF;
+}
+.about .header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.about .header h2 {
+  color: #FFFFFF;
+}
+.about .header li {
+  display: inline;
+}
+.about .header ul {
+  margin-left: 0px;
+}
+.about .content h3 {
+  width: 60%;
+  margin-left: 25%;
+  margin-bottom: 25px;
+}
+.about .content h4 {
+  color: #FFFF00 ;
+}
+.about .content li {
+  margin-left: 30px;
+}
+.techskills .spacing {
+  margin-top: 15px;
+}
+.techskills .container {
+    border: 1px solid black;
+}
+.techskills #horiz {
+  margin-top:30px;
+}
+.techskills #horiz li {
+  display: inline;
+  padding-right: 15px;
 }
