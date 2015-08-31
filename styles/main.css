@@ -17,8 +17,8 @@ body {
 }
 .header {
     font-family: 'Finger Paint', cursive;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 
@@ -59,28 +59,32 @@ body {
 }
 
 .content {
-  background-color: #33CCFF;
-
-}
-#contentBox {
+  /*background-color: #33CCFF;*/
   margin: 0 auto 0 auto;
   width: 100%;
+}
+
+#contentBox {
+  border: 1px solid black;
 
 }
 #column1 {
   float:left;
   margin-left: 50px;
-  width:25%;
+  width:22%;
   color: #444444;
 }
 #column1 p {
-  padding: 5px 30px 20px 10px;
+  padding: 10px 20px 20px 0px;
+  margin-left: 10px;
 }
-#column1 h4 {
-  padding-left: 10px;
-}
+
 #column1 ul {
   margin-left: 20px;
+}
+#column1 .image_sizing {
+  border: 1px solid black;
+  margin-bottom: 15px;
 }
 #column2 {
   float:left;
