@@ -67,6 +67,7 @@ body {
   border: 1px solid #5f5e5f;
   font-family:'Special Elite', cursive;
   padding: 10px;
+  margin-right: 5px;
 }
 #column1 {
   float:left;
@@ -114,8 +115,15 @@ body {
   border: 1px solid #5f5e5f;
   font-family:'Special Elite', cursive;
   padding: 12px;
-  margin-right: 5px;
+  margin-right: 12px;
 }
+.extra {
+  margin: 30px 5px 0px 10px;
+}
+.extra a {
+  color: #FF9900;
+}
+
 #column3 {
   float:left;
   margin-left: 110px;
@@ -142,5 +150,5 @@ body {
   border: 1px solid #5f5e5f;
   font-family:'Special Elite', cursive;
   padding: 12px;
-  margin-right: 5px;
+  margin-right: 23px;
 }
