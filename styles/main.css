@@ -92,7 +92,7 @@ body {
 }
 #column2 {
   float:left;
-  margin-left: 50px;
+  margin-left: 95px;
   width: 24%;
 }
 #column2 .image_sizing {
@@ -113,11 +113,34 @@ body {
   margin-left: 16px; 
   border: 1px solid #5f5e5f;
   font-family:'Special Elite', cursive;
-  padding: 20px;
+  padding: 12px;
   margin-right: 5px;
 }
 #column3 {
   float:left;
-  margin-left: 50px;
+  margin-left: 110px;
   width:25%;
+}
+
+#column3 .image_sizing {
+  height: 148px;
+  width: 273px;
+  border: 1px solid #5f5e5f;;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+#column3 ul {
+  margin-left: 20px; 
+}
+#column3 p {
+  padding: 5px 10px 20px 0px;
+  margin-left: 10px;
+}
+
+#contentBox3 {
+  margin-left: 16px; 
+  border: 1px solid #5f5e5f;
+  font-family:'Special Elite', cursive;
+  padding: 12px;
+  margin-right: 5px;
 }
