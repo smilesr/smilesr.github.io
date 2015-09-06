@@ -21,6 +21,9 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   margin-bottom: 140px;
   list-style-type: none;
 }
+.contact .content li {
+  margin-bottom: 10px;
+}
 .contact #horiz li {
   display: inline;
   padding: 10px;
