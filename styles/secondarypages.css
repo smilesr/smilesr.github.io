@@ -32,8 +32,8 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   color: #669900;
 }
 .contact #resizing {
-  height: 150px;
-  width: 200px;
+  height: 100px;
+  width: 150px;
 }
 .about {
   background-color: #bbc2c1;
