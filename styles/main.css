@@ -64,8 +64,8 @@ body {
 }
 
 #contentBox1 {
-  border: 1px solid #5f5e5f;
-  font-family:'Special Elite', cursive;
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
   padding: 10px;
   margin-right: 5px;
 }
@@ -85,7 +85,6 @@ body {
   margin-left: 20px;
 }
 #column1 .image_sizing {
-  border: 1px solid #5f5e5f;;
   margin-bottom: 15px;
 }
 #column1 a {
@@ -112,8 +111,8 @@ body {
 }
 #contentBox2 {
   margin-left: 16px; 
-  border: 1px solid #5f5e5f;
-  font-family:'Special Elite', cursive;
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
   padding: 12px;
   margin-right: 12px;
 }
@@ -133,7 +132,6 @@ body {
 #column3 .image_sizing {
   height: 148px;
   width: 273px;
-  border: 1px solid #5f5e5f;;
   margin-left: 15px;
   margin-bottom: 15px;
 }
@@ -147,8 +145,8 @@ body {
 
 #contentBox3 {
   margin-left: 16px; 
-  border: 1px solid #5f5e5f;
-  font-family:'Special Elite', cursive;
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
   padding: 12px;
   margin-right: 23px;
 }
