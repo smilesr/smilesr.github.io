@@ -63,21 +63,32 @@ header img {
   color: #FF9900;
      font-family: 'Finger Paint', cursive;
 }
-div {
+/*div {
   float: left;
 }
+.displayed {
+    display: block;
+    margin-left: 10%;
+    margin-right: 90%;
+  }*/
+
 img {
+    max-width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+/*img {
     max-width: 5%;
     max-height: 5%;
     transform: scale(10);
     margin-left: 600px;
     margin-top: 150px;
 }
-/*.bounding-box {
+.bounding-box {
   background-image: url("images/bobnmad.png");
   background-repeat: no-repeat;
   background-size: contain;
-}*/
+}
 .bounding-box {
   background-image: url("images/bobnmad.png");
   background-size: contain;
@@ -86,4 +97,4 @@ img {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-}
+}*/
