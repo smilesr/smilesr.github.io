@@ -45,8 +45,13 @@ body {
   color: #5f5e5f;
   font-family:'PT Sans', sans-serif;
 }
+#shift {
+  margin-left: 175px;
+
+}
 #techskills {
   text-align: center;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 h3 {
@@ -78,7 +83,10 @@ h3 {
 .paragraphs h3 {
   margin-bottom: 0px;
 }
-.btn {
+#buttoncenter {
+  text-align: center;
+}
+.butt-on{
   -webkit-border-radius: 6;
   -moz-border-radius: 6;
   border-radius: 6px;
@@ -89,8 +97,7 @@ h3 {
   padding: 10px 10px 10px 10px;
   text-decoration: none;
 }
-
-.btn:hover {
+.butt-on:hover {
   background: #a8b0b5;
   text-decoration: none;
 }
