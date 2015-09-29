@@ -1,0 +1,67 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.header {
+  font-family: 'Finger Paint', cursive;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.header h2 {
+    font-family: 'Finger Paint', cursive;
+   font-size: 50px;
+   color: #5f5e5f;
+   font-style: italic;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.header h3 {
+   font-family: 'Finger Paint', cursive;
+   font-size: 30px;
+   color: #5f5e5f;
+   font-style: italic;
+   text-align: center;
+}
+.header img {
+  margin: 0 auto 0 auto;
+  display: block;
+}
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+.nav li {
+  display: inline;
+  padding-right: 45px;
+  font-size: 20px;
+}
+.nav a {
+  color: #FF9900;
+}
+h3 {
+  /*color: #669900;*/
+  color: #5f5e5f;
+  text-align: center;
+  font-family:'PT Sans', sans-serif;
+} 
+.content {
+  margin-left: 270px;
+  width: 100%;
+}
+.boxes {
+  float: left;
+  display: inline-block;
+  padding: 40px 50px 50px 50px;
+}
+#resizing_linked{
+  height: 80px;
+  width: 90px;
+  padding: 18px;
+}
+#resizing_git{
+  height: 80px;
+  width: 90px;
+  padding-top: 18px;
+}

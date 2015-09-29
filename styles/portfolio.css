@@ -1,0 +1,146 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  color: #5f5e5f;
+  margin-bottom: 30px;
+  font-family:'PT Sans', sans-serif;
+}
+h3 a {
+  color: #FF9900;
+}
+.header {
+  font-family: 'Finger Paint', cursive;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.header h2 {
+  font-family: 'Finger Paint', cursive;
+   font-size: 50px;
+   color: #5f5e5f;
+   font-style: italic;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.header h3 {
+   font-family: 'Finger Paint', cursive;
+   font-size: 30px;
+   color: #5f5e5f;
+   font-style: italic;
+   text-align: center;
+}
+.header img {
+  margin: 0 auto 0 auto;
+  display: block;
+}
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+.nav li {
+  display: inline;
+  padding-right: 45px;
+  font-size: 20px;
+}
+.nav a {
+  color: #FF9900;
+}
+
+
+.content {
+  margin-left: 100px;
+  /*margin: 0 auto 0 auto;
+  width: 100%;*/
+}
+#column1 {
+  float:left;
+  margin-left: 50px;
+  width:22%;
+  color: #444444;
+  /*margin-right: 40px;*/
+}
+#contentBox1 {
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
+  /*padding: 10px;*/
+  /*padding: 12px; 8?
+  /*margin-right: 5px;*/
+}
+#column1 p {
+  padding: 10px 20px 20px 10px;
+  /*margin-left: 10px;*/
+}
+#column1 ul {
+  margin-left: 20px;
+}
+#column1 .image_sizing {
+  margin-bottom: 15px;
+  height: 148px;
+  width: 263px;
+}
+#contentBox1 a {
+  color: #FF9900;
+}
+#column2 {
+  float:left;
+  /*margin-left: 95px;*/
+  margin-left: 50px;
+  width: 24%;
+}
+#contentBox2 {
+  margin-left: 16px; 
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
+  /*padding: 12px;
+  margin-right: 12px;*/
+}
+#column2 p {
+  padding: 5px 10px 20px 10px;
+  /*margin-left: 10px; */
+}
+#column2 ul {
+  margin-left: 20px;
+}
+#column2 .image_sizing {
+  height: 148px;
+  width: 263px;
+  /*border: 1px solid #5f5e5f;*/
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.extra {
+  margin: 30px 5px 0px 10px;
+}
+.extra a {
+  color: #FF9900;
+}
+#column3 {
+  float:left;
+  /*margin-left: 110px;*/
+  margin-left: 50px;
+  width:25%;
+}
+#contentBox3 {
+  margin-left: 16px; 
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
+  /*padding: 12px;
+  margin-right: 23px;*/
+}
+#column3 p {
+  padding: 5px 10px 20px 10px;
+  /*margin-left: 10px; */
+}
+#column3 ul {
+  margin-left: 20px; 
+}
+#column3 .image_sizing {
+  height: 148px;
+  width: 273px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
