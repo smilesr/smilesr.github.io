@@ -73,3 +73,17 @@ img {
     margin-left: 600px;
     margin-top: 150px;
 }
+/*.bounding-box {
+  background-image: url("images/bobnmad.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}*/
+.bounding-box {
+  background-image: url("images/bobnmad.png");
+  background-size: contain;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
