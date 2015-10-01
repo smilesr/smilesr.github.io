@@ -54,8 +54,10 @@ h2 {
   /*color: #f4f0ea;*/
   color: #5f5e5f;
 }
-img {
-  margin-left: 300px;
+#farmer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 }
 
 
