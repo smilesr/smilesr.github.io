@@ -42,4 +42,9 @@ a {
 img {
   margin-top: -15px;
 }
+@media (max-width: 767px) {
+  .img-responsive {
+    max-width: 70%;
+  }
+}
 
