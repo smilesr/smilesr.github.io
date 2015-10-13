@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="styles/resume.css">
    
    <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
@@ -13,7 +17,7 @@
       <h2> Robert G. Smiles Jr. </h2>
       <h3> Software Developer </h3>
 
-      <ul class="nav">
+      <ul class="list-inline text-center">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -26,11 +30,12 @@
       <div id = "buttoncenter">
         <a href="https://drive.google.com/folderview?id=0B9-5IoOZVYIbfkVseVExS3VzNkhhQlR0V2lzNzJMbHhjU0NYV3p0U3NWZHQ3OWxKTUZlekk&usp=sharing"<button name="button" class="butt-on" target="_blank">Resume-PDF Version</a>
       </div>
-    <div id="techskills"> <h3> TECHNICAL SKILLS </h3> </div>
+    <div class="text-center"> <h3> TECHNICAL SKILLS </h3> </div>
 
-    <div id="shift">
-    
-    <div class="across">
+    <div class="container-fluid">
+      <div class="row">
+        <section class="col-xs-12 col-sm-2 col-sm-offset-1">
+        <!--<section class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1">-->
       <h4> LANGUAGES </h4>
       <ul>
         <li> Ruby </li>
@@ -38,39 +43,43 @@
         <li> CSS </li>
         <li> Javascript </li>
       </ul>
-    </div>
-    <div class="across">
+    </section>
+        <section class="col-xs-12 col-sm-2">
+        <!--<section class="col-xs-12 col-sm-6 col-md-2">-->
       <h4> WEB FRAMEWORKS </h4>
       <ul>
         <li> Ruby on Rails </li>
         <li> Sinatra </li>
+        <li> Bootstrap3 </li>
       </ul>
-    </div>
-    <div class="across">
+    </section>
+    <!--<div class="clearfix visible-sm-block"></div>-->
+        <section class="col-xs-12 col-sm-2">
       <h4> DATABASES </h4>
       <ul>
         <li> PostgreSQL </li>
         <li> SQL </li>
         <li> SQLite </li>
       </ul>
-    </div>
-    <div class="across">
+    </section>
+        <section class="col-xs-12 col-sm-2">
       <h4> VERSION CONTROL </h4>
       <ul>
         <li> Git </li>
         <li> Github </li>
         <li> Bitbucket </li>
       </ul>
-    </div>
-    <div class="across">
+    </section>
+        <section class="col-xs-12 col-sm-2">
       <h4> TOOLS/LIBRARIES/GEMS </h4>
       <ul>
         <li> JBuilder </li>
         <li> Twilio </li>
         <li> Heroku </li>
       </ul>
-    </div>
+    </section>
   </div>
+</div>
 
 
     <h3 id="experience"> RECENT EXPERIENCE </h3>

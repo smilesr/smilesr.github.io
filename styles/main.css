@@ -3,28 +3,6 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   border: 0;
   margin: 0;
 }
-/*html { 
-  background-image: url(images/bobnmad.png);
-  background-repeat: no-repeat;*/ 
-}
-/*body {
-  height:100%;
-  width:100%;
-  background-image:url(images/bobnmad.png);/*your background image*/  
-
-  /*background-color: #6a6464;*/
-  /*background-color: white;*/
- /*background-color:#336600;  */
-/* 
-    background-image: url(images/05-white-brick.png);
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-position: center; 
-    width: 630px;!
-    height: 246px;
-  }
-*/
-
 header {
     font-family: 'Finger Paint', cursive;
     margin-top: 25px;
@@ -49,29 +27,19 @@ header img {
   margin: 0 auto 0 auto;
   display: block;
 }
-.nav {
-  list-style-type: none;
-  text-align: center;
-  margin: 25px 0px 25px 0px;
-}
-.nav li {
-  display: inline;
-  padding-right: 45px;
-  font-size: 20px;
-}
-.nav a {
+
+li {
+  margin-top: 25px;
+  margin-right: 10px;
+
+} 
+a {
   color: #FF9900;
-     font-family: 'Finger Paint', cursive;
+  font-family: 'Finger Paint', cursive;
+  font-size: 20px;
+
 }
 img {
-    max-width: 80%;
-    height: auto;
-    margin-left: 10%;
+  margin-top: -15px;
 }
-/*img {
-    max-width: 5%;
-    max-height: 5%;
-    transform: scale(10);
-    margin-left: 600px;
-    margin-top: 150px;
-}
+

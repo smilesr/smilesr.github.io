@@ -6,7 +6,7 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 .header {
     font-family: 'Finger Paint', cursive;
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 .header h2 {
    font-family: 'Finger Paint', cursive;
@@ -14,7 +14,7 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
    color: #5f5e5f;
    font-style: italic;
    text-align: center;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .header h3 {
    font-size: 30px;
@@ -26,38 +26,23 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   margin: 0 auto 0 auto;
   display: block;
 }
-.nav {
-  list-style-type: none;
-  text-align: center;
-  margin: 25px 0px 25px 0px;
-}
-.nav li {
-  display: inline;
-  padding-right: 45px;
+li {
+  margin-top: 25px;
+  margin-right: 10px;
+} 
+a {
+  color: #FF9900;
+  font-family: 'Finger Paint', cursive;
   font-size: 20px;
 }
-.nav a {
-  color: #FF9900;
-}
-h2 {
-  text-align: center;
-  color: #5f5e5f;
-  margin-bottom: 30px;
-  font-family:'PT Sans', sans-serif;
-}
-.content h3 {
+.content {
   width: 60%;
   margin-left: 20%;
   margin-bottom: 25px;
-  /*font-family:'Special Elite', cursive;*/
+  font-size: 18px;
   font-family:'PT Sans', sans-serif;
-  /*color: #f4f0ea;*/
   color: #5f5e5f;
 }
-#farmer{
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
-}
+
 
 

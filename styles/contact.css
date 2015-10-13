@@ -6,7 +6,7 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 .header {
   font-family: 'Finger Paint', cursive;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .header h2 {
     font-family: 'Finger Paint', cursive;
@@ -27,33 +27,30 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   margin: 0 auto 0 auto;
   display: block;
 }
-.nav {
-  list-style-type: none;
-  text-align: center;
-  margin: 25px 0px 25px 0px;
-}
-.nav li {
-  display: inline;
-  padding-right: 45px;
+li {
+  margin-top: 25px;
+  margin-right: 10px;
+} 
+a {
+  color: #FF9900;
+  font-family: 'Finger Paint', cursive;
   font-size: 20px;
 }
-.nav a {
-  color: #FF9900;
+img {
+  margin-top: -15px;
 }
-h3 {
-  /*color: #669900;*/
+.text-center h3 {
   color: #5f5e5f;
-  text-align: center;
   font-family:'PT Sans', sans-serif;
 } 
 .content {
-  margin-left: 270px;
-  width: 100%;
+  /*margin-left: 270px;*/
+  /*width: 100%;*/
 }
 .boxes {
-  float: left;
-  display: inline-block;
-  padding: 40px 50px 50px 50px;
+  /*float: left;
+  display: inline-block;*/
+  padding: 10px 40px 50px 40px;
 }
 #resizing_linked{
   height: 80px;
