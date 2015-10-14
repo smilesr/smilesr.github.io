@@ -27,11 +27,11 @@ header img {
   margin: 0 auto 0 auto;
   display: block;
 }
-li {
+header li {
   margin-top: 25px;
   margin-right: 10px;
 } 
-a {
+header a {
   color: #FF9900;
   font-family: 'Finger Paint', cursive;
   font-size: 20px;
@@ -47,6 +47,9 @@ a {
 @media (max-width: 767px){
   .img-responsive {
     max-width: 70%;
+  }
+  header li {
+    margin-right: 17px;
   }
 }
 

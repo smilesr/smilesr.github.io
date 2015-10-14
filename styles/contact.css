@@ -27,11 +27,11 @@ header img {
   margin: 0 auto 0 auto;
   display: block;
 }
-li {
+header li {
   margin-top: 25px;
   margin-right: 10px;
 } 
-a {
+header a {
   color: #FF9900;
   font-family: 'Finger Paint', cursive;
   font-size: 20px;
@@ -43,7 +43,11 @@ img {
   color: #5f5e5f;
   font-family:'PT Sans', sans-serif;
 } 
-
+p {
+  font-family:'PT Sans', sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
 #resizing_linked{
   height: 80px;
   width: 90px;
@@ -54,4 +58,9 @@ img {
   width: 90px;
   padding-top: 18px;
   margin-bottom: 13px;
+}
+@media (max-width: 767px) {
+  header li {
+    margin-right: 15px;
+  }
 }

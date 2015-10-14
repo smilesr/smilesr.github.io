@@ -13,7 +13,7 @@ header {
   margin-bottom: 25px;
 }
 header h2 {
-   font-family: 'Finger Paint', cursive;
+  font-family: 'Finger Paint', cursive;
   font-size: 50px;
   color: #5f5e5f;
   font-style: italic;
@@ -21,7 +21,7 @@ header h2 {
   margin-bottom: 20px;
 }
 header h3 {
-   font-family: 'Finger Paint', cursive;
+  font-family: 'Finger Paint', cursive;
   font-size: 30px;
   color: #5f5e5f;
   font-style: italic;
@@ -31,11 +31,11 @@ header img {
   margin: 0 auto 0 auto;
   display: block;
 }
-.list-inline li {
+header li {
   margin-right: 10px;
   font-size: 20px;
 }
-.list-inline a {
+header a {
   color: #FF9900;
 }
 .text-center h3 {
@@ -44,6 +44,14 @@ header img {
 @media (max-width: 767px) {
   .row ul {
   margin-bottom: 30px;
+  }
+  header li {
+    margin-right: 17px;
+  }
+}
+@media (max-width: 1199px) {
+  .row ul {
+    margin-bottom: 30px;
   }
 }
 h3 {
