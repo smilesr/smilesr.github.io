@@ -3,10 +3,13 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   border: 0;
   margin: 0;
 }
+body {
+  margin-bottom: 100px;
+}
 header {
-    font-family: 'Finger Paint', cursive;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  font-family: 'Finger Paint', cursive;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 header h2 {
    font-family: 'Finger Paint', cursive;
@@ -35,6 +38,9 @@ header a {
   color: #FF9900;
   font-family: 'Finger Paint', cursive;
   font-size: 20px;
+}
+p {
+  margin-bottom: 10px;
 }
 .content {
   width: 60%;

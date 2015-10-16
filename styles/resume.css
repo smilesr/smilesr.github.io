@@ -4,8 +4,7 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   margin: 0;
 }
 body {
-  background-color: white;
-  font-family:'PT Sans', sans-serif;
+  margin-bottom: 100px;
 }
 header {
   font-family: 'Finger Paint', cursive;
@@ -38,6 +37,9 @@ header li {
 header a {
   color: #FF9900;
 }
+.content {
+    font-family:'PT Sans', sans-serif;
+}
 .text-center h3 {
   margin-top: 25px;
 }
@@ -63,7 +65,7 @@ h3 {
   margin-bottom: 25px;
 }
 .paragraphs {
-  margin-left: 15px;
+  margin: 0px 150px 20px 150px;
 }
 .paragraphs h3 {
   margin-bottom: 0px;
