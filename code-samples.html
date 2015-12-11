@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/code.css">
+    <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <title>Bootstrap</title>
+</head>
+<body>
+  
+    <header>
+      <h2> Robert G. Smiles Jr. </h2>
+      <h3> Software Developer </h3>
+
+      <ul class="nav">
+        <li><a href="portfolio.html">Back to Portfolio Page</a></li>
+      </ul>
+    </header>
+  
+  <div class = "container-fluid">
+    <div class = "row">
+      <section class = "col-md-6">
+        <h2> Data Munging Code Challenge </h2>
+        <p class="opening-paragraph"> The script below is my answer to the Data Munging (Part Three) challenge from <a href = "http://codekata.com/kata/kata04-data-munging/"> Code Kata </a>. The only resources that I used were Rubular (for the RegEx) and the Ruby docs (no Google searches, no Stack Overflow).</p>
+
+        <p> The goal was to first write separate scripts to read two different data files and then refactor those scripts to produce one script that can evaluate BOTH data files.  More specifically, the data tables were parsed to determine which row had smallest spread (i.e. difference) between selected columns.  One data set shows the soccer goal differential for various teams and the other set shows the minimum and maximum temperatures for various days of a month. </p>
+        <pre class="prettyprint pre-scrollable">
+
+class DataSheets
+
+  def initialize(file_name, minuend_column, subtrahend_column, label_column, category)
+    @file_name = file_name
+    @column1 = minuend_column #column to be subtracted from
+    @column2 = subtrahend_column #column showing amount to subtract
+    @label_column = label_column #column needed for output(i.e. team name for soccer file and day of month for temperature file
+    @category = category #needed to route for proper output
+    @arr = []
+    @label_value = String.new
+  end
+
+  def prep_file
+    f = File.open(@file_name, "r")
+    f.each_line do |l|
+      puts l
+      @arr <<  l.split(" ")
+    end
+  end
+
+  def compare_difference
+    difference = (@arr[2][@column1].to_i - @arr[2][@column2].to_i).abs
+    #.abs used to avoid situation where negative numbers may distort the ranking of the spread
+    @arr.each do |line|
+      if (line[0]) =~ /\d/ && (difference > (line[@column1].to_i - line[@column2].to_i).abs) 
+        #RegEx attempts to ignore rows without data(e.g. column names, separation lines)
+        difference = (line[@column1].to_i - line[@column2].to_i).abs
+        @label_value = line[@label_column]
+      end
+    end
+  end
+
+  def output_results
+    if @category == "soccer"
+      puts "#{@label_value} had the smallest difference in ‘for’ and ‘against’ goals."
+    elsif @category == "weather"
+      puts "Day #{@label_value} saw the smallest temperature spread."
+    end
+  end
+end
+  
+ds = DataSheets.new("./datamunging/weather_data.txt", 1, 2, 0, "weather")
+# Alternative arguments to run the other data file:
+#ds = DataSheets.new("./datamunging/soccer_data.txt", 6, 8, 1, "soccer")
+ds.prep_file
+ds.compare_difference
+ds.output_results
+      </pre>
+      </section>
+      <section class = "col-md-6">
+        <h2> Karate Chop Code Challenge </h2>
+        <p class="opening-paragraph">  The script below is my answer to the Karate Chop challenge from <a href="http://codekata.com/kata/kata02-karate-chop/"> Code Kata </a>. The only resource that I used was the Ruby docs (no Google searches, no Stack Overflow).</p>
+
+        <p>  The goal was to write a binary search algorithm.  I also added a method to generate a sorted array of random numbers upon which to apply the algorithm.  </p>
+        <pre class="prettyprint pre-scrollable" id="large-box">
+
+class BinarySearch
+
+  # arguments provide the number of integers in the array and the range of the random numbers
+  def initialize (number_of_random_numbers, upper_limit)
+    @number_of_random_numbers = number_of_random_numbers
+    @upper_limit = upper_limit
+    @arr = []
+    @target = rand(1..@upper_limit)
+  end
+
+  def generate_random_numbers
+    until (@arr.length == @number_of_random_numbers) do
+      selection = rand(1..@upper_limit)
+      if @arr.include?(selection)
+        selection = rand(1..@upper_limit)
+      else
+        @arr << selection
+        selection = rand(1..@upper_limit)
+      end
+    end
+    @arr.sort!
+    puts "\nThe target number is #{@target}.\n\n"
+    puts "The array in which the target will be search is #{@arr}.\n\n"
+  end
+
+  def guess_target
+    guess = @arr[((@arr.length)/2)]
+    @i=1
+    until guess == @target || @arr.length == 1
+      if guess < @target && @arr.length.even? 
+        @arr = @arr.last((@arr.length-1) - @arr.index(guess))
+      elsif guess < @target && @arr.length.odd?
+        @arr = @arr.last((@arr.length-1) - @arr.index(guess))
+      elsif guess > @target && @arr.length.even?
+        @arr = @arr.first((@arr.length) - @arr.index(guess))
+      else guess > @target && @arr.length.odd?
+        @arr = @arr.first((@arr.length-1) - @arr.index(guess))
+      end
+      guess = @arr[((@arr.length)/2)]
+      @i+=1
+    end
+    if guess != @target
+      guess = -1
+    end
+    return guess
+  end
+
+  def show_results(x)
+    if x == -1
+      puts "The target number is not in the array.  This was determined after #{@i} iteration(s)."
+    else
+      puts "The target #{x} was determined in #{@i} guess(es)."
+    end
+  end
+
+end
+
+bsearch1 = BinarySearch.new(7, 14)
+bsearch1.generate_random_numbers
+x=bsearch1.guess_target
+bsearch1.show_results(x)
+        </pre>
+      </div>
+    <div class = "row">
+      <section class = "col-md-6">
+        <h2> Syllable Code Challenge </h2>
+        <p class="opening-paragraph">  The script below is my answer to a challenge posed by my daughter to count the syllables in random words. The only resources I used were Rubular (for RegEx) and the Ruby docs (no Google, no Stack Overflow).</p>
+
+        <p>  The goal was to write a script to count the number of syllables in a set of words.  I used the <a href="http://www.howmanysyllables.com/howtocountsyllables"> "written method" </a> set of rules for determining the number of syllables. </p>
+        <pre class="prettyprint pre-scrollable" id="large-box">
+
+vowel_arr = ["a", "e", "i", "o", "u", "y"]
+
+string_arr = ["local", "frogs", "dry", "person", "submission", "vegetable", "yes", "real", "there", "fearsome", "languish", "lament", "table", "cycle", "ladle", "amphitropous", "inconsequential", "unremittence", "dairy"]
+
+string_arr.each do |word|
+  syll = 0
+  letters = word.chars
+  last_letter_vowel = false
+  letters.each_with_index do |letter, i|
+    vowel_arr.each do |vowel|
+      if letter == vowel
+        syll += 1
+        if i >= 1 && last_letter_vowel == true
+          syll -= 1
+        end
+        if i == 0 && letter =='y'
+          syll -= 1
+        end
+        if i == letters.length-1 && letter == 'e' && (letters[i-1] != "l" || (letters[i-1]== 'l' && letters[i-2] == /[^abc]/))
+          syll -= 1
+        end
+        last_letter_vowel = true
+        break
+      end
+      if vowel == vowel_arr.last
+        last_letter_vowel = false
+      end
+    end
+   end  
+  if syll <= 0
+    syll = 1
+  end
+  puts "#{word} has #{syll} syllables"
+ end
+        </pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>
