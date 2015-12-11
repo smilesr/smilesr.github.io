@@ -5,7 +5,7 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
 }
 body {
   margin-bottom: 100px;
-  font-family:'PT Sans', sans-serif;
+
 }
 header {
   font-family: 'Finger Paint', cursive;
@@ -40,10 +40,11 @@ a:hover {
 }
 article {
   margin-left: 20px;
+  font-family:'PT Sans', sans-serif;
 }
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: #5f5e5f;
 }
@@ -52,7 +53,6 @@ h1 {
   margin: 0px 30px 50px 0px;
 }
   ul {
-
     margin: 0;
     padding: 0;
   }
