@@ -149,13 +149,14 @@ bsearch1.generate_random_numbers
 x=bsearch1.guess_target
 bsearch1.show_results(x)
         </pre>
-      </div>
+      </section>
+    </div>
     <div class = "row">
       <section class = "col-md-6">
         <h2> Syllable Code Challenge </h2>
         <p class="opening-paragraph">  The script below is my answer to a challenge posed by my daughter to count the syllables in random words. The only resources I used were Rubular (for RegEx) and the Ruby docs (no Google, no Stack Overflow).</p>
 
-        <p>  The goal was to write a script to count the number of syllables in a set of words.  I used the <a href="http://www.howmanysyllables.com/howtocountsyllables"> "written method" </a> set of rules for determining the number of syllables. </p>
+        <p>  The goal was to write a script to count the number of syllables in a set of words.  I used the <a href="http://www.howmanysyllables.com/howtocountsyllables"> "written method" </a> and other sources for the set of rules for determining the number of syllables. </p>
         <pre class="prettyprint pre-scrollable" id="large-box">
 
 vowel_arr = ["a", "e", "i", "o", "u", "y"]
@@ -168,15 +169,15 @@ string_arr.each do |word|
   last_letter_vowel = false
   letters.each_with_index do |letter, i|
     vowel_arr.each do |vowel|
-      if letter == vowel
+      if letter == vowel  #syllable rule: if a vowell, then count as a syllable
         syll += 1
-        if i >= 1 && last_letter_vowel == true
+        if i >= 1 && last_letter_vowel == true #syllable rule: if vowels are consecutive, then only count it as one syllable
           syll -= 1
         end
-        if i == 0 && letter =='y'
+        if i == 0 && letter =='y' #syllable rule: if first letter is a 'y', then don't count it as a syllable
           syll -= 1
         end
-        if i == letters.length-1 && letter == 'e' && (letters[i-1] != "l" || (letters[i-1]== 'l' && letters[i-2] == /[^abc]/))
+        if i == letters.length-1 && letter == 'e' && (letters[i-1] != "l" || (letters[i-1]== 'l' && letters[i-2] =~ /[aily]/)) #syllable rule: if word ends in 'e' then the 'e' would typically not count as a syllable, however, if the second-to-last letter is an 'l' that is not preceded by a letter in the RegEx then it does count as a syllable 
           syll -= 1
         end
         last_letter_vowel = true
@@ -193,7 +194,40 @@ string_arr.each do |word|
   puts "#{word} has #{syll} syllables"
  end
         </pre>
-      </div>
+      </section>
+      <section class = "col-md-6">
+        <h2> Lottery Number Code Challenge </h2>
+        <p class="opening-paragraph">  The script below is my answer to the Sorting It Out (Sorting Balls) challenge from <a href="http://codekata.com/kata/kata11-sorting-it-out/"> Code Kata </a>. The only resource that I used was the Ruby docs (no Google searches, no Stack Overflow).</p>
+
+        <p>  The goal was to write a script that one-at-a-time takes a randomly selected number and sorts it instantly within the growing collection of random numbers without using any type of built-in sort method.</p>
+        <pre class="prettyprint pre-scrollable" id="large-box">
+
+lottery_array = []
+answer = ""
+until answer == "no"
+  random_number = rand(0..59)
+  puts "Select a number? 'yes' or 'no'"
+  answer = gets.chomp.downcase
+  if answer == "yes"
+    if lottery_array == []
+      lottery_array << random_number
+    else
+      lottery_length_max = lottery_array.length + 1
+      lottery_array.each do |selection|
+        if random_number <= selection  
+          lottery_array.insert(lottery_array.index(selection), random_number)
+          break  
+        end
+      end
+      if lottery_array.length < lottery_length_max
+        lottery_array.push(random_number)
+      end
+    end
+  end
+puts "#{lottery_array}"
+end
+        </pre>
+      </section>
     </div>
   </div>
 
