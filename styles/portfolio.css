@@ -50,7 +50,7 @@ h2 {
   margin-bottom: 20px;
   color: #5f5e5f;
 }
-#pagegradient {
+.pagegradient {
   background-image:
         -webkit-gradient(
             radial, 
