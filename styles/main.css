@@ -38,7 +38,6 @@ header {
 }
 
 header h2 {
-  font-family: 'Finger Paint', cursive;
   font-size: 3em;
   color: #5f5e5f;
   font-style: italic;
@@ -47,7 +46,6 @@ header h2 {
 }
 
 header h3 {
-   font-family: 'Finger Paint', cursive;
    font-size: 1.75em;
    color: #5f5e5f;
    font-style: italic;
@@ -58,26 +56,13 @@ header img {
   display: block;
 }
 
-/*li {
-  margin-top: 25px;
-  margin-right: 10px;
-
-} 
-a {
-  color: #FF9900;
-  font-family: 'Finger Paint', cursive;
-  font-size: 20px;
-
-}*/
 .image-container {
-  /*height:300px;*/
   height: 30%;
   width: 50%;
-  /*width:450px;*/
   margin-right: auto;
   margin-left: auto;
 }
-  /*margin-top: -15px;*/
+
 #image-pic {
   max-width: 100%;
   max-height: 100%;
@@ -92,52 +77,50 @@ a {
   font-size: 1em;
   color: #5f5e5f;
 }
+
 .content p {
   margin-top: 10px;
   line-height: 200%;
 }
 
 p::first-letter { 
-    font-size: 200%;
-    }
-/*@media (max-width: 767px) {
-  .img-responsive {
-    max-width: 70%;
-  }
-}*/
+  font-size: 200%;
+}
+
 @media (max-width: 767px) {
   header h2 {
     font-size: 2em;
     margin-bottom: 10px;
-}
-  header h3 {
+  }
+
+header h3 {
     font-size: 1.25em;
   }
-  .content {
-    margin-right: 13%;
-    margin-left: 15%;
-    line-height: 120%;
 
+.content {
+  margin-right: 13%;
+  margin-left: 15%;
+  line-height: 120%;
   }
-  .fixed-nav-bar {
-    height: 62px;
+
+.fixed-nav-bar {
+  height: 62px;
   }
-/*  header {
-    margin-top: 100px;
-  }*/
-  .menu-items li {
-    margin-right: 20px;
-    margin-bottom: 5px;
-    line-height: 80%;
-}
-  .menu-items a {
+
+.menu-items li {
+  margin-right: 20px;
+  margin-bottom: 5px;
+  line-height: 80%;
+  }
+
+.menu-items a {
   font-size: 1.3em;
+  }
+}
 
-}
-}
 @media (min-width: 768px) and (max-width: 1000px) {
-    .content {
-      margin-right: 22%;
+  .content {
+    margin-right: 22%;
     margin-left: 25%;
-
+  }
 }
