@@ -50,7 +50,7 @@ h2 {
   margin-bottom: 20px;
   color: #5f5e5f;
 }
-.pagegradient {
+/*.pagegradient {
   background-image:
         -webkit-gradient(
             radial, 
@@ -178,6 +178,6 @@ h2 {
         }
 
         .button span span::selection {
-          color: #E8E8E8;
+          color: #E8E8E8;*/
 
       }
