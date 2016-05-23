@@ -3,11 +3,10 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   border: 0;
   margin: 0;
 }
-
 body {
   margin-bottom: 100px;
 }
-
+/*NAVIGATION BAR*/
 .fixed-nav-bar {
   position: fixed;
   top: 0;
@@ -19,24 +18,21 @@ body {
   text-align: center;
   background-color: #FF9900;
 }
-
 .menu-items li {
   margin: 10px;
   display: inline-block;
 }
-
 .menu-items a {
   font-family: 'Finger Paint', cursive;
   color: white;
   font-size: 1.25em;
 }
-
+/* NAME & TITLE HEADER */
 header {
   font-family: 'Finger Paint', cursive;
   margin-top: 75px;
   margin-bottom: 30px;
 }
-
 header h2 {
   font-size: 3em;
   color: #5f5e5f;
@@ -44,7 +40,6 @@ header h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-
 header h3 {
    font-size: 1.75em;
    color: #5f5e5f;
@@ -55,20 +50,19 @@ header img {
   margin: 0 auto 0 auto;
   display: block;
 }
-
+/*Home: photo*/
 .image-container {
   height: 30%;
   width: 50%;
   margin-right: auto;
   margin-left: auto;
 }
-
 #image-pic {
   max-width: 100%;
   max-height: 100%;
   margin: auto;
 }
-
+/*Home: paragraphs*/
 .content {
   margin-top: 25px;
   margin-right: 28%;
@@ -77,44 +71,96 @@ header img {
   font-size: 1em;
   color: #5f5e5f;
 }
-
 .content p {
   margin-top: 10px;
   line-height: 200%;
 }
-
-p::first-letter { 
+#home-page-intro p::first-letter { 
   font-size: 200%;
 }
+/*Resume: technical skills & projects headings; title overrides this based on specificity*/
+h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*Resume: skill subheadings*/
+h4 {
+  font-weight: bold;
+}
+/*Resume: skills*/
+.resume_skills {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5f5e5f;
+}
+/*Resume: experience*/
+.resume_experience {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5f5e5f;
+  margin-top: 25px;
+  text-align: center;
+}
+#resume_button {
+  margin-bottom: 10px;
+  color: #5f5e5f;
+}
+/*Portfolio: border around web page screen shot*/
+#image-border {
+  border: 1px black solid;
+}
+/*Portfolio: projects*/
+.services.container {
+  margin-top: -25px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #5f5e5f;
+}
+.services.container p {
+  width: 280px;
+}
+.services.container a {
+  color: inherit;
+}
+.services.container a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.services.container .row {
+  margin-left: 50px;
+}
+/*Resume/Portfolio: skills & projects subcategories*/
+.row {
+  margin-top: 20px;
+}
 
+/*MEDIA QUERIES*/
 @media (max-width: 767px) {
   header h2 {
     font-size: 2em;
     margin-bottom: 10px;
   }
-
-header h3 {
+  header h3 {
     font-size: 1.25em;
   }
-
-.content {
-  margin-right: 13%;
-  margin-left: 15%;
-  line-height: 120%;
+  #resume_content {
+    margin-left: 2%
   }
-
-.fixed-nav-bar {
-  height: 62px;
+  #table {
+    margin-left: 2%;
   }
-
-.menu-items li {
-  margin-right: 20px;
-  margin-bottom: 5px;
-  line-height: 80%;
+  .content {
+    margin-right: 13%;
+    margin-left: 15%;
+    line-height: 120%;
   }
-
-.menu-items a {
-  font-size: 1.3em;
+  .fixed-nav-bar {
+    height: 62px;
+  }
+  .menu-items li {
+    margin-right: 20px;
+    margin-bottom: 5px;
+    line-height: 80%;
+  }
+  .menu-items a {
+    font-size: 1.3em;
   }
 }
 

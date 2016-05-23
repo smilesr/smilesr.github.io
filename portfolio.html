@@ -2,18 +2,19 @@
 <html>
   <head>
     <title> Bob Smiles portfolio </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-77021307-1', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
@@ -30,9 +31,76 @@
     </nav>
     <header>
       <h2> Bob Smiles </h2>
-      <h3> Software Developer </h3>
+      <h3> Ruby Developer ~ Software Engineer </h3>
     </header>
-    <div class="content">
+
+    <div class="services container">
+      <h3>PROJECTS</h3>
+      <div class="row">
+        <section class="col-sm-6 col-md-4">
+          <a class="project_link" href="https://github.com/zonein-tiy/zonein">
+            <img class="icon" src="images/zonein.png" alt="screenshot of zone-in app home page">
+            <h4>ZoneIn</h4>
+            <p>A web app that enables users to create athletic workouts,  to automatically calendar them and capture metrics from select workouts.</p>
+
+            <p> TOOLS: Ruby on Rails + PostgreSQL + Heroku </p>
+          </a>
+        </section>
+     
+      <section class="col-sm-6 col-md-4">
+        <a class="project_link" href="https://github.com/smilesr/hotornot">
+          <img class="icon" src="images/hotornot.jpg" alt="image of hotornot app logo">
+          <h4>HotOrNot</h4>
+          <p>A cell phone text-based app in which various players compete to guess the current temperature in American cities.</p>
+
+          <p> TOOLS: Ruby on Rails + Twilio </p>
+        </a>
+      </section>
+
+      <!-- <div class="clearfix visible-xs-block"></div> -->
+
+      <section class="col-sm-6 col-md-4">
+        <a class="project_link" href="https://github.com/smilesr/smilesr.github.io">
+          <img class="icon" id="image-border" src="images/rsz_portfolio-home.png" alt="image of home page of my portfolio">
+          <h4>Portfolio</h4>
+          <p>My portfolio website built with responsive web design.</p>
+          <p> TOOLS: HTML + CSS + Bootstrap</p>
+        </a>
+      </section>
+
+   <div class="clearfix"></div>
+<!-- <div class="clearfix visible-sm-inline"></div>  -->
+      <section class="col-sm-6 col-md-4">
+        <a class="project_link" href="https://github.com/smilesr/free-agent-tracker">
+          <img class="icon" src="images/rsz_1mlb-free-agent.png" alt="miscellaneous Ruby code">
+          <h4>MLB Free Agent Tracker</h4>
+          <p>A command line app website scraper that collects the signing status of Major League Baseball free agents and displays their status by team.</p>
+          <p> TOOLS: Ruby + Nokogiri </p>
+        </a>
+      </section>
+
+
+      <section class="col-sm-6 col-md-4">
+        <a class="project_link" href="https://github.com/smilesr/birth_date">
+          <img class="icon" src="images/birthdate-app-image.png" alt="miscellaneous Ruby code">
+          <h4>Birthdate</h4>
+          <p>A command line app that scrapes websites to reveal historical information about your birth date.</p>
+          <p>TOOLS: Ruby + Sinatra + Nokogiri </p>
+        </a>
+      </section>
+
+      <section class="col-sm-6 col-md-4">
+        <a class="project_link" href="https://github.com/MapRoute-Group2/Backend">
+          <img class="icon" src="images/rsz_real_estate_app_image.png" alt="miscellaneous Ruby code">
+          <h4>Real Estate Mapper</h4>
+          <p>A web app in which interested users enter multiple residences that are for sale and the most efficient driving route is rendered using the Google Maps API.</p>
+          <p> TOOLS: Ruby on Rails + API </p>
+        </a>
+      </section>   
+  </div><!-- row -->   
+</div><!-- content container -->
+
+<!--     <div class="content">
       <h1> PORTFOLIO PAGE </h1>
       <div class="pagegradient"></div>
         <a class="button" href="apps.html">
@@ -46,7 +114,7 @@
         <a class="button" href="code-samples.html">
           <span>CODESAMPLES</span>
         </a>
-      </div> 
+      </div>  -->
     </div>
  </body>
 </html> 

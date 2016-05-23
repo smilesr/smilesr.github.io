@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/resume.css">
-   
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'> 
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/a9b35069ab.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,101 +20,126 @@
       ga('send', 'pageview');
 
     </script>
-   </head>
+  </head>
   <body>
+    <nav class="fixed-nav-bar">
+      <div id="menu" class="menu">
+        <ul class="menu-items">
+          <li><a href="/">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="mailto:smilesr120@gmail.com"  target="_blank">Email</a></li>
+          <li><a href="https://github.com/smilesr" target="_blank">Github</a></li>
+        </ul>
+      </div>
+    </nav>
     <header>
-      <h2> Robert G. Smiles Jr. </h2>
-      <h3> Software Developer </h3>
-
-      <ul class="list-inline text-center">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <h2> Bob Smiles </h2>
+      <h3> Ruby Developer ~ Software Engineer </h3>
     </header>
 
-    <div class = "content">
-      <!-- https://drive.google.com/folderview?id=0B9-5IoOZVYIbfkVseVExS3VzNkhhQlR0V2lzNzJMbHhjU0NYV3p0U3NWZHQ3OWxKTUZlekk&usp=sharing-->
-      <div id = "buttoncenter">
-        <a href="images/resume.pdf"> <button name="button" class="butt-on" target="_blank">Resume-PDF Version</a>
-      </div>
-      <div class="text-center"> <h3> TECHNICAL SKILLS </h3> </div>
-
+<!--     <article class="resume"> -->
+      <div class="resume_skills">
+        <h3> TECHNICAL SKILLS </h3>
         <div class="container-fluid">
           <div class="row">
             <section class="col-xs-12 col-sm-offset-3 col-sm-3 col-md-offset-1 col-md-2 ">
-            <!--<section class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1">-->
               <h4> LANGUAGES </h4>
+              <marquee behavior="slide" direction="left">
               <ul>
                 <li> Ruby </li> 
                 <li> HTML/CSS </li> 
                 <li> Javascript </li>
               </ul>
+            </marquee>
             </section>
-            <section class="col-xs-12 col-sm-3 col-md-2">
-            <!--<section class="col-xs-12 col-sm-6 col-md-2">-->
+           
+            <section class="col-xs-12 col-sm-6 col-md-2">
               <h4> WEB FRAMEWORKS </h4>
+              <marquee behavior="slide" direction="left">
               <ul>
                 <li> Ruby on Rails </li>
                 <li> Sinatra </li>
                 <li> Bootstrap3 </li>
               </ul>
+            </marquee>
             </section>
 
             <section class="col-xs-12 col-sm-offset-1 col-sm-3 col-md-offset-0 col-md-2">
               <h4> DATABASES </h4>
+              <marquee behavior="slide" direction="left">
               <ul>
                 <li> PostgreSQL </li>
                 <li> SQL </li>
                 <li> SQLite </li>
               </ul>
+            </marquee>
             </section>
 
-            <section class="col-xs-12 col-sm-3 col-md-2">
+             <section class="col-xs-12 col-sm-3 col-md-2">
               <h4> VERSION CONTROL </h4>
+              <marquee behavior="slide" direction="left">
               <ul>
                 <li> Git </li>
                 <li> Github </li>
                 <li> Bitbucket </li>
               </ul>
+              </marquee>
               </section>
+
               <section class="col-xs-12 col-sm-offset-1 col-sm-3 col-md-offset-0 col-md-2">
                 <h4> OTHER TOOLS </h4>
+                <marquee behavior="slide" direction="left">
                 <ul>
-                  <li> JBuilder </li>
-                  <li> Twilio </li>
-                  <li> Heroku </li>
+                  <li>jQuery</li>
+                  <li>Twilio</li>
+                  <li>Heroku</li>
+                  <li>AJAX</li>
                 </ul>
+              </marquee>
               </section>
           </div>
         </div>
+      </div>
+      <div class="resume_experience">
+
+        <a href="images/resume.pdf"> <button name="button" class="butt-on" target="_blank">Resume-PDF Version</a>
+<!--  <button type="button" id="resume_button">
+         class="btn btn-default">
+            <a href="images/resume.pdf" download='Bob_Smiles_Resume.pdf'>
+              <i class="fa fa-download" aria-hidden="true"></i>
+              
+            </a> DOWNLOAD RESUME
+        </button>  -->
+
+        <!-- <h3 id="experience"> RECENT EXPERIENCE </h3>
+
+        <div class = "paragraphs">
+          <h3>Freelance Software Developer</h3>
+          <h4> August 2015 </h4>
+          <p> Created, using Ruby on Rails, versioning and supplemented/refactored existing controller methods for the API of a mobile app in development (private Github repo). </p>
+        </div>
 
 
-    <h3 id="experience"> RECENT EXPERIENCE </h3>
-    <div class = "paragraphs">
-      <h3>Freelance Software Developer</h3>
-      <h4> August 2015 </h4>
-      <p> Created, using Ruby on Rails, versioning and supplemented/refactored existing controller methods for the API of a mobile app in development (private Github repo). </p>
-    </div>
+        <div class = "paragraphs">
+          <h3> <a href="http://theironyard.com/locations/atlanta/"> The Iron Yard Academy </a> </h3>
+          <h4> May 2015 - July 2015 </h4>
+          <p> The Iron Yard Academy is an intensive code school focused on Rails development and training students to think like engineers. I created many individual and team Ruby and Ruby on Rails applications throughout the course, including a large final team project in which I developed an API for a fitness training application that allows users to style their own exercise plans from pre-made or custom workouts, create a calendar to track progress towards a plans completion, and capture metrics from the workouts.</p>
+        </div>
 
-    <div class = "paragraphs">
-      <h3> <a href="http://theironyard.com/locations/atlanta/"> The Iron Yard Academy </a> </h3>
-      <h4> May 2015 - July 2015 </h4>
-      <p> The Iron Yard Academy is an intensive code school focused on Rails development and training students to think like engineers. I created many individual and team Ruby and Ruby on Rails applications throughout the course, including a large final team project in which I developed an API for a fitness training application that allows users to style their own exercise plans from pre-made or custom workouts, create a calendar to track progress towards a plans completion, and capture metrics from the workouts.</p>
-    </div>
+        <div class = "paragraphs">
+          <h3> King & King </h3>
+          <h4> October 2012 - May 2015 </h4>
+          <p> Met with clients to evaluate which bankruptcy chapter is most advisable; prepared bankruptcy filings and motions related to sales of real estate, mortgage loan modifications, and settlements of personal injury cases; assisted clients in addressing variety of adverse creditor actions. </p>
+        </div>
 
-    <div class = "paragraphs">
-      <h3> King & King </h3>
-      <h4> October 2012 - May 2015 </h4>
-      <p> Met with clients to evaluate which bankruptcy chapter is most advisable; prepared bankruptcy filings and motions related to sales of real estate, mortgage loan modifications, and settlements of personal injury cases; assisted clients in addressing variety of adverse creditor actions. </p>
-    </div>
-
-    <div class = "paragraphs">
-      <h3> Law Office of Robert G. Smiles Jr. </h3>
-      <h4> January 2009 - October 2012 </h4>
-      <p> Met with clients and managed all aspects, including the negotiation and litigation, of landlord-tenant, zoning, breach of contract and personal injury cases; prepared variety of business contracts for small companies; represented energy policy organization in administrative and appellate proceedings. </p>
-    </div>
-  </div>
+        <div class = "paragraphs">
+          <h3> Law Office of Robert G. Smiles Jr. </h3>
+          <h4> January 2009 - October 2012 </h4>
+          <p> Met with clients and managed all aspects, including the negotiation and litigation, of landlord-tenant, zoning, breach of contract and personal injury cases; prepared variety of business contracts for small companies; represented energy policy organization in administrative and appellate proceedings. </p>
+        </div>
+ -->
+      </div>
+  <!--   </article> -->
   </body>
 </html>
