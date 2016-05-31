@@ -124,49 +124,11 @@ h4 {
   text-decoration: none;
 }
 .services.container .row {
-  margin-left: 50px;
+  margin-left: 5px;
 }
 /*Resume/Portfolio: skills & projects subcategories*/
 .row {
   margin-top: 20px;
 }
 
-/*MEDIA QUERIES*/
-@media (max-width: 767px) {
-  header h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  header h3 {
-    font-size: 1.25em;
-  }
-  #resume_content {
-    margin-left: 2%
-  }
-  #table {
-    margin-left: 2%;
-  }
-  .content {
-    margin-right: 13%;
-    margin-left: 15%;
-    line-height: 120%;
-  }
-  .fixed-nav-bar {
-    height: 62px;
-  }
-  .menu-items li {
-    margin-right: 20px;
-    margin-bottom: 5px;
-    line-height: 80%;
-  }
-  .menu-items a {
-    font-size: 1.3em;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1000px) {
-  .content {
-    margin-right: 22%;
-    margin-left: 25%;
-  }
-}
