@@ -79,11 +79,11 @@ header img {
   font-size: 200%;
 }
 /*Resume: technical skills & projects headings; title overrides this based on specificity*/
-h3{
+h3 {
   text-align: center;
   margin-bottom: 15px;
 }
-/*Resume: skill subheadings*/
+/*Resume: skill subheadings & Portfolio: app names*/
 h4 {
   font-weight: bold;
 }
@@ -103,32 +103,33 @@ h4 {
   margin-bottom: 10px;
   color: #5f5e5f;
 }
-/*Portfolio: border around web page screen shot*/
-#image-border {
-  border: 1px black solid;
-}
 /*Portfolio: projects*/
-.services.container {
-  margin-top: -25px;
+.container {
   font-family: 'Ubuntu', sans-serif;
   color: #5f5e5f;
+  /*margin: 0 auto;*/
 }
-.services.container p {
-  width: 280px;
+.container p {
+  /*width: 280px;*/
 }
-.services.container a {
+.container a {
   color: inherit;
 }
-.services.container a:hover {
+.container a:hover {
   color: blue;
   text-decoration: none;
 }
-.services.container .row {
+.container .row {
   margin-left: 5px;
 }
 /*Resume/Portfolio: skills & projects subcategories*/
 .row {
   margin-top: 20px;
 }
-
-
+@media screen and (min-width : 769px)
+/*@media (min-width: @screen-sm-min)*/
+ {
+ .container p {
+  width: 280px;
+  }
+}
